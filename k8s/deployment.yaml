@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: quait
+  name: xrecp
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: quait
+      app: xrecp
   template:
     metadata:
       labels:
-        app: quait
+        app: xrecp
     spec:
       containers:
-      - image: okteto.dev/quait:latest
-        name: quait
+      - image: okteto.dev/xrecp:latest
+        name: xrecp
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "www.lenskart.com"
+          value: "www.crazygames.com"
         - name: Vless_UUID
-          value: "0c1f1c18-fe56-48a1-8df6-5980918d073b"
+          value: "9b069e66-211a-48d0-8d6f-6a7779a8b296"
         - name: Vless_Path
-          value: "/giyreas"
+          value: "/gy6we34"
         - name: Vmess_UUID
-          value: "0c1f1c18-fe56-48a1-8df6-5980918d073b"
+          value: "9b069e66-211a-48d0-8d6f-6a7779a8b296"
         - name: Vmess_Path
-          value: "/BNKDS2GU"
+          value: "/xiezrku"
         - name: Share_Path
-          value: "/Share764"
+          value: "/Share076"
