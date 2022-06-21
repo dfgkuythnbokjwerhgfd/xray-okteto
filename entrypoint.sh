@@ -7,27 +7,27 @@ fi
 echo ${VER}
 
 if [[ -z "${Vless_Path}" ]]; then
-  Vless_Path="/gy6we34"
+  Vless_Path="/s45twesd"
 fi
 echo ${Vless_Path}
 
 if [[ -z "${Vless_UUID}" ]]; then
-  Vless_UUID="9b069e66-211a-48d0-8d6f-6a7779a8b296"
+  Vless_UUID="93a6c607-b5ad-4cf1-bfca-d4733aa81fa4"
 fi
 echo ${Vless_UUID}
 
 if [[ -z "${Vmess_Path}" ]]; then
-  Vmess_Path="/xiezrku"
+  Vmess_Path="/wkfsjie"
 fi
 echo ${Vmess_Path}
 
 if [[ -z "${Vmess_UUID}" ]]; then
-  Vmess_UUID="9b069e66-211a-48d0-8d6f-6a7779a8b296"
+  Vmess_UUID="93a6c607-b5ad-4cf1-bfca-d4733aa81fa4"
 fi
 echo ${Vmess_UUID}
 
 if [[ -z "${Share_Path}" ]]; then
-  Share_Path="/share076"
+  Share_Path="/share433"
 fi
 echo ${Share_Path}
 
