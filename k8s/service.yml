@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: quait
+  name: xrecp
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "quait"
+  - name: "xrecp"
     port: 8080
   selector:
-    app: quait
+    app: xrecp
