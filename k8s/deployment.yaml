@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: catd
+  name: quait
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: catd
+      app: quait
   template:
     metadata:
       labels:
-        app: catd
+        app: quait
     spec:
       containers:
-      - image: okteto.dev/catd:latest
-        name: catd
+      - image: okteto.dev/quait:latest
+        name: quait
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "beauty-upgrade.tw"
+          value: "www.lenskart.com"
         - name: Vless_UUID
-          value: "0986d4a1-aa27-4477-a9ff-6e169cd8449c"
+          value: "0c1f1c18-fe56-48a1-8df6-5980918d073b"
         - name: Vless_Path
-          value: "/bkmfsy"
+          value: "/giyreas"
         - name: Vmess_UUID
-          value: "0986d4a1-aa27-4477-a9ff-6e169cd8449c"
+          value: "0c1f1c18-fe56-48a1-8df6-5980918d073b"
         - name: Vmess_Path
-          value: "/gdy6trsf"
+          value: "/BNKDS2GU"
         - name: Share_Path
-          value: "/Share534"
+          value: "/Share764"
