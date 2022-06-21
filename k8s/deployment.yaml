@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: xrecp
+  name: rwecikt
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: xrecp
+      app: rwecikt
   template:
     metadata:
       labels:
-        app: xrecp
+        app: rwecikt
     spec:
       containers:
-      - image: okteto.dev/xrecp:latest
-        name: xrecp
+      - image: okteto.dev/rwecikt:latest
+        name: rwecikt
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "www.crazygames.com"
+          value: "icook.tw"
         - name: Vless_UUID
-          value: "9b069e66-211a-48d0-8d6f-6a7779a8b296"
+          value: "93a6c607-b5ad-4cf1-bfca-d4733aa81fa4"
         - name: Vless_Path
-          value: "/gy6we34"
+          value: "/s45twesd"
         - name: Vmess_UUID
-          value: "9b069e66-211a-48d0-8d6f-6a7779a8b296"
+          value: "93a6c607-b5ad-4cf1-bfca-d4733aa81fa4"
         - name: Vmess_Path
-          value: "/xiezrku"
+          value: "/wkfsjie"
         - name: Share_Path
-          value: "/Share076"
+          value: "/Share433"
