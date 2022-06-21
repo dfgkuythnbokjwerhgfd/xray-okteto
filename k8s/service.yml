@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: liker
+  name: catd
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "liker"
+  - name: "catd"
     port: 8080
   selector:
-    app: liker
+    app: catd
