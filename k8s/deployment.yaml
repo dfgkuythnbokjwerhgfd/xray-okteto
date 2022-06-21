@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ray
+  name: liker
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ray
+      app: liker
   template:
     metadata:
       labels:
-        app: ray
+        app: liker
     spec:
       containers:
-      - image: okteto.dev/ray:latest
-        name: ray
+      - image: okteto.dev/liker:latest
+        name: liker
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "$ProxySite"
+          value: "www.azmovies.net"
         - name: Vless_UUID
-          value: "$Vless_UUID"
+          value: "8bfeb4b2-197f-4c38-bb98-b9896f403b92"
         - name: Vless_Path
-          value: "$Vless_Path"
+          value: "/u5qwary"
         - name: Vmess_UUID
-          value: "$Vmess_UUID"
+          value: "8bfeb4b2-197f-4c38-bb98-b9896f403b92"
         - name: Vmess_Path
-          value: "$Vmess_Path"
+          value: "/srbuawet"
         - name: Share_Path
-          value: "$Share_Path"
+          value: "/Share621"
